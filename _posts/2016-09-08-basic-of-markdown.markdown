@@ -1,3 +1,14 @@
+---
+layout:     post
+title:      "Markdown常用语法简介&实践"
+subtitle:   ""
+date:       2016-09-08
+author:     "vcoolwind"
+header-img: "img/post-bg-js-module.jpg"
+tags:
+    - markdown
+---
+
 # Markdown常用语法简介
 这里记录下日常使用Markdown的常用语法。Markdown语法简单，便于排版，使得写作者专注于内容，不必纠结于排版，尤其用于移动端编写，貌似效率更高。
 
@@ -72,6 +83,7 @@
 7. 使用 三个\` (英文输入状态下的数字1左边的输入键)实现插入一段高亮代码，配合`TAB缩进或者四个空格`缩进。可以指定渲染的语言，更方便的展示。
 
     这里描述一下高亮代码的使用，样例如下：
+    
     ```bash
     #!/bin/bash
     #用于检查redis的监控脚本 脚本内容如下 
@@ -80,6 +92,7 @@
     exception="/var/log/redis-runtime-exception.log"    #日志存放位置
     echo "[check]start..." >> $LOGFILE
     ```
+    
     ```javascript
     var canvas = document.getElementById("canvas");
     var context = canvas.getContext("2d");
@@ -91,6 +104,7 @@
 `***`分割线貌似比较粗
 ***
 `---`实现的分割线，默认会把当成标题，比如我。
+
 --- 
     
     只要 * 或者 - 大于等于三个就可组成一条平行线。
