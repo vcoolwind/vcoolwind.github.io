@@ -3,7 +3,7 @@ title: vcoolwind's Blog
 SEOTitle: vcoolwind| yanfengking@163.com | 王彦锋 | 技术博客
 author: vcoolwind
 timezone: Asia/Shanghai
-paginate: 8 # pagination based on number of posts
+paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
 highlighter: rouge
 markdown: kramdown
@@ -68,16 +68,16 @@ sidebar-avatar: /img/avatar-me.png     # img前面加`/`绝对引用。
 
 # Friends
 friends: [
-	{   
+  {   
         title: "R学习社区",
         href: "http://bzrlc.github.io/about/"
-	},{
+  },{
         title: "Hux-模板来源",
         href: "https://github.com/Huxpro/huxpro.github.io"
-	},{
+  },{
         title: "谢益辉",
         href: "http://yihui.name"
-	},{
+  },{
         title: "落园",
         href: "http://www.loyhome.cn/"
     },{
@@ -86,11 +86,8 @@ friends: [
     },{
         title: "邱怡轩",
         href: "http://yixuan.cos.name/cn/"
-	},{
+  },{
         title: "JRQ 西南交大",
         href: "http://ruiqiangjiao.github.io/"
-	}
+  }
 ]
-
-
-
