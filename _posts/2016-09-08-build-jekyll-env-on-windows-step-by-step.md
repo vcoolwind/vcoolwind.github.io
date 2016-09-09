@@ -4,10 +4,12 @@ title:      "在win10 环境搭建jekyll环境"
 subtitle:   "jekyll 构建笔记"
 date:       2016-09-08
 author:     "vcoolwind"
-header-img: "img/post-bg-js-module.jpg"
+header-img: "img/_post/common-bg.jpg"
 tags:
     - 环境构建
     - windows
+description:  "在windows10 环境搭建jekyll环境"
+    
 ---
 
 # 在windows10 环境搭建jekyll环境

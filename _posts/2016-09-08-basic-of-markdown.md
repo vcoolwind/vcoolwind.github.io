@@ -4,9 +4,10 @@ title:      "Markdown常用语法简介&实践"
 subtitle:   ""
 date:       2016-09-08
 author:     "vcoolwind"
-header-img: "img/post-bg-js-module.jpg"
+header-img: "img/_post/common-bg.jpg"
 tags:
     - markdown
+description:  "Markdown常用语法简介"    
 ---
 
 # Markdown常用语法简介
