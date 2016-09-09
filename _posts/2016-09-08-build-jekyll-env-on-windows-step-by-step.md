@@ -8,8 +8,7 @@ header-img: "/img/post/common-bg.jpg"
 tags:
     - 环境构建
     - windows
-description:  "在windows10 环境搭建jekyll环境"
-    
+description:  "在windows10 环境搭建jekyll环境"    
 ---
 
 # 在windows10 环境搭建jekyll环境
