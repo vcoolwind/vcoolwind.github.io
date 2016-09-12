@@ -5,7 +5,13 @@ layout: default
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
-        background-image: {% if page.header-img %} url('{{ site.BASE_PATH }}{{ page.header-img }}'){% endif %}{% if page.bg-color %} {{ page.bg-color }}{% endif %}
+       {% if page.header-linear-img %}
+	    background: -moz-linear-gradient(right, rgba(255,255,255,0), rgba(255,255,255,1)),url({{ site.BASE_PATH }}{{ page.header-linear-img }});
+	    background: -webkit-linear-gradient(right, rgba(255,255,255,0), rgba(255,255,255,1)),url({{ site.BASE_PATH }}{{ page.header-linear-img }});
+	    background: -o-linear-gradient(right, rgba(255,255,255,0), rgba(255,255,255,1)),url({{ site.BASE_PATH }}{{ page.header-linear-img }});   
+       {% else %}
+           background-image: {% if page.header-img %} url('{{ site.BASE_PATH }}{{ page.header-img }}'){% endif %}{% if page.bg-color %} {{ page.bg-color }}{% endif %}
+       {% endif %}
     }
 </style>
 
