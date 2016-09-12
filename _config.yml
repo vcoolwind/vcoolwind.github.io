@@ -58,7 +58,7 @@ anchorjs: true                          # 修改在default.html->footer
 duoshuo_username: vcoolwind
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-url: "http://vcoolwind.github.io" 
+url: "https://vcoolwind.github.io" 
 
 # page Sidebar settings
 sidebar-about-description: "程序员|架构师|钓鱼爱好者"
