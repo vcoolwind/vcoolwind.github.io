@@ -2,7 +2,7 @@
 layout:     post
 title:      "RabbitMQ内存限制异常排查与解决"
 subtitle:   ""
-date:       2016-06-28
+date:       2016-04-12
 author:     "vcoolwind"
 bg-color:   "linear-gradient(rgba(47, 255, 0, 0) 60%, rgba(255, 49, 2, 0.34)), linear-gradient(70deg, rgba(53, 187, 20, 0.56) 32%, rgba(222, 100, 117, 0.58))"
 tags:
