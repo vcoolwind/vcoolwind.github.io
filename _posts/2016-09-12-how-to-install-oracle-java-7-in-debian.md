@@ -19,11 +19,13 @@ description:  "使用apt-get安装oracle-java"
 
 
 ### 设置apt-get 安装源，安装oracle-java7-installer
-    echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee /etc/apt/sources.list.d/webupd8team-java.list
-    echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list
-    apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
-    apt-get update
-    apt-get install oracle-java7-installer
+```bash
+echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee /etc/apt/sources.list.d/webupd8team-java.list
+echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
+apt-get update
+apt-get install oracle-java7-installer	 
+```
 
 
 ### 安装oracle-java7-installer后，会提示用wget开始下载jdk-7u80-linux-x64.tar.gz
@@ -55,23 +57,31 @@ description:  "使用apt-get安装oracle-java"
 
 
 ### 设置java7环境变量
-    apt-get install oracle-java7-set-default
+```bash
+apt-get install oracle-java7-set-default
+```
     
 > To automatically set up the Java 7 environment variables, you can install the following package: 
 > If you've already installed oracle-java6-set-default or oracle-java8-set-default, they will be automatically removed when installing oracle-java7-set-default (and the environment variables will be set for Oracle Java 7 instead).
 
 
 ### 设置default-java便于其他程序使用
-    rm /usr/lib/jvm/default-java 
-    ln -s /usr/lib/jvm/java-7-oracle /usr/lib/jvm/default-java
+{% highlight bash %}	
+rm /usr/lib/jvm/default-java 
+ln -s /usr/lib/jvm/java-7-oracle /usr/lib/jvm/default-java
+{% endhighlight %}
 
 ### 安装成功！
-    java -version
-    ps -er|grep java  (启动tomcat后检查是否使用的是对应版本的java程序  /usr/lib/jvm/java-*-oracle)
-
+```bash
+java -version
+#(启动tomcat后检查是否使用的是对应版本的java程序  /usr/lib/jvm/java-*-oracle)
+ps -er|grep java  
+```
 
 参考：[how-to-install-oracle-java-7-in-debian](http://www.webupd8.org/2012/06/how-to-install-oracle-java-7-in-debian.html)
 
+       
+        
 
 ***
 ---
@@ -85,6 +95,7 @@ description:  "使用apt-get安装oracle-java"
     ``` 
     root 26355  26348  0 09:12 pts/1    00:00:00 wget --continue --no-check -certificate -O jdk-7u80-linux-x64.tar.gz --header Cookie: oraclelicense=a http://download.oracle.com/otn-pub/java/jdk/7u80-b15/jdk-7u80-linux-x64.tar.gz
     ```
+    
     > killall wget
     
     
