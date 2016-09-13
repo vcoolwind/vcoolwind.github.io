@@ -12,6 +12,7 @@ description:  "使用apt-get安装oracle-java"
 ---
 
 ### 使用apt-get安装oracle-java
+> 本文以oracle jdk7为例，讲解oracle-java7的安装过程。
 {: .no_toc}
 
 * 目录

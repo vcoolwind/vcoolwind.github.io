@@ -13,8 +13,8 @@ description:  "ZooKeeper简易安装配置"
 
 
 ### ZooKeeper简易安装配置
-> 下文以zookeeper 3.4.8版本部署到/opt/目录为例，讲解ZooKeeper的基本安装与配置。
 {: .no_toc}
+> 本文以zookeeper 3.4.8版本部署到/opt/目录为例，讲解ZooKeeper的基本安装与配置。
 
 * 目录
 {:toc}
