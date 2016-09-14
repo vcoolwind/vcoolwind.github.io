@@ -6,7 +6,6 @@ date:       2016-09-13
 author:     "vcoolwind"
 bg-color:   "linear-gradient(rgba(47, 255, 0, 0) 60%, rgba(255, 49, 2, 0.34)), linear-gradient(70deg, rgba(53, 187, 20, 0.56) 32%, rgba(222, 100, 117, 0.58))"
 tags:
-    - RabbitMQ
     - java
 description:  "Java 忽略SSL认证通用代码"    
 ---
@@ -23,6 +22,7 @@ static {
 ```
 
 自定义类HTTPSSecureProtocolSocketFactory代码如下：
+
 ```java
 import java.io.IOException;
 import java.net.InetAddress;
