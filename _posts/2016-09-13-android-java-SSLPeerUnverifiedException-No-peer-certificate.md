@@ -20,6 +20,7 @@ description:  "Android SSLPeerUnverifiedException问题解决"
 
 ### 问题现象
 公司服务添加Ali WAF后，部分低版本Android https访问异常，debug显示如下信息：
+
 ```java
 09-13 17:37:27.972: E/LoginActivity(30091): No peer certificate
 09-13 17:37:28.735: W/System.err(30091): javax.net.ssl.SSLPeerUnverifiedException: No peer certificate
