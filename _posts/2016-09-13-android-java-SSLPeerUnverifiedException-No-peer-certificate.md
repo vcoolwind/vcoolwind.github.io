@@ -86,6 +86,7 @@ description:  "Android SSLPeerUnverifiedException问题解决"
         }        
 ```
 自定义类代码如下：
+
 ```java
 import java.io.IOException;
 import java.net.Socket;
