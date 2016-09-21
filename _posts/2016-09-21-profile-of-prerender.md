@@ -25,9 +25,10 @@ Prerender是一款非常强大的针对SEO友好的html渲染器，我曾经使�
 - 遵循`谁使用谁缓存`的原则，在nginx可以在获取到Prerender进行缓存，下次访问时先查询缓存，缓存未命中时，再提交Prerender进行渲染。
 
 ### 安装Prerender
-1. 安装nodejs，参见[这里](/2016-09-21-how-to-install-nodejs-on-debian-with-apt-get.md)
+1. 安装nodejs，参见[这里](https://vcoolwind.github.io/blog/2016/09/21/how-to-install-nodejs-on-debian-with-apt-get/)
 
 2. 安装并启用Prerender
+
 ```bash
 $ git clone https://github.com/prerender/prerender.git
 $ cd prerender
