@@ -14,7 +14,7 @@ description:  "对SEO友好的prerender简介"
 # 对SEO友好的Prerender简介
 我们知道，前端工程师和SEOer会经常`打架`。目前的冲突：数据和页面分类是趋势，并且能大大提高开发效率；SEO对js加载的页面采集不够友好，使得决策者很难下决心全部使用前端js渲染数据。
 
-有了Prerender，`妈妈`再也不用担心爬虫爬取了。
+有了Prerender，`麻麻`再也不用担心爬虫爬取了。
 
 Prerender是一款非常强大的针对SEO友好的html渲染器，我曾经使用htmlunit实现了该功能，项目地址在[这里](https://github.com/vcoolwind/StaticCrawler)。
 但整体效率上感觉比Prerender要低，该项目比较活跃，值得使用。
