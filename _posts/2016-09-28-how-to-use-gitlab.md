@@ -29,6 +29,7 @@ description:  "gitlab安装、配置、备份、恢复"
 -  apt-get install gitlab-ce  
 ```
 顺便介绍一下，如何指定版本号安装
+
 ```bash
 # 查询可支持的版本
 apt-cache showpkg gitlab-ce
@@ -38,6 +39,7 @@ apt-get install gitlab-ce=8.10.5-ce.0
 
 ### 配置(支持163.com)
 修改 /etc/gitlab/gitlab.rb ，设置发送邮件
+
 ```
 external_url 'http://192.168.0.60'
 
@@ -54,6 +56,7 @@ gitlab_rails['smtp_enable_starttls_auto'] = false
 
 ### 启动
 使用reconfigure启动gitlab
+
 ```bash
 gitlab-ctl reconfigure
 ```
@@ -61,6 +64,7 @@ gitlab-ctl reconfigure
 ### 日常的版本管理
 然后就可以登录gitlab进行日常的版本管理了，gitlab使用方法比较简单，web方式的管理简洁易懂，不再赘述。
 顺便讲解一下，git仓库的迁移，这个通常会用到。
+
 ```bash
 git push --mirror git@192.168.85.139:gxx/pxx.git
 ```
@@ -68,6 +72,7 @@ git push --mirror git@192.168.85.139:gxx/pxx.git
 ### gitlab备份
 #### 一键备份
 使用一条命令即可创建完整的Gitlab备份:
+
 ```bash
 gitlab-rake gitlab:backup:create
 ```
@@ -75,6 +80,7 @@ gitlab-rake gitlab:backup:create
 
 #### 修改备份目录
 修改/etc/gitlab/gitlab.rb来修改默认存放备份文件的目录:
+
 ```
 gitlab_rails['backup_path'] = '/mnt/backups'
 ```
@@ -82,6 +88,7 @@ gitlab_rails['backup_path'] = '/mnt/backups'
 
 #### 自动备份
 可以通过`crontab`使用备份命令实现自动备份:
+
 ```bash
 crontab -e
 #加入以下, 实现每天凌晨2点进行一次自动备份:
